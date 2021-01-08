@@ -6,6 +6,8 @@ let erro = new Discord.MessageEmbed()
 
 if(message.channel.id != 789308075340464178) return message.channel.send(erro)
 
+message.delete()
+
 let embed = new Discord.MessageEmbed()
 .setDescription('Olhe sua dm!:3')
 
