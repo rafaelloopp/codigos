@@ -8,8 +8,7 @@ exports.run = async (client, message, args) => {
   ) 
   var sender = message.author;
   message.channel.send(`Olá ${message.author.username}, as perguntas para adicionar o bot foi enviada no seu privado, caso não tenha recebido, verifique se o seu privado esta desbloqueado.`);
-  message.author
-    .send("**Adicione seu bot** \nQual o nome do bot?")
+  message.author.send("**Adicione seu bot** \nQual o nome do bot?")
     .then(async msg => {
       let nome = await msg.channel.createMessageCollector(
         m => m.author.id === message.author.id,
