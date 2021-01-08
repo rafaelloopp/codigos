@@ -1,8 +1,11 @@
 const Discord = require("discord.js");
 
 exports.run = async (client, message, args) => {
-  if (!message.member.roles.cache.some(r =>
-      ["634559225963479040", "602616263218561024"].includes(r.id))
+  let erro = new Discord.MessageEmbed()
+.setDescription('Você só pode usar esse comando no canal <#789308075340464178>')
+.setColor('#FF0101')
+
+if(message.channel.id != 789308075340464178) return message.channel.send(erro)
   ) 
   var sender = message.author;
   message.channel.send(`Olá ${message.author.username}, as perguntas para adicionar o bot foi enviada no seu privado, caso não tenha recebido, verifique se o seu privado esta desbloqueado.`);
