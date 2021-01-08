@@ -1,10 +1,8 @@
 const Discord = require("discord.js");
 
 exports.run = async (client, message, args) => {
-  if (
-    !message.member.roles.cache.some(r =>
-      ["634559225963479040", "602616263218561024"].includes(r.id)
-    )
+  if (!message.member.roles.cache.some(r =>
+      ["634559225963479040", "602616263218561024"].includes(r.id))
   ) 
   var sender = message.author;
   message.channel.send(`Olá ${message.author.username}, as perguntas para adicionar o bot foi enviada no seu privado, caso não tenha recebido, verifique se o seu privado esta desbloqueado.`);
