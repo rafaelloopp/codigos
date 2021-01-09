@@ -1,4 +1,5 @@
 const Discord = require('discord.js')
+const db = require("firebase").database()
 exports.run = async(client, message, args) => {
 let erro = new Discord.MessageEmbed()
 .setDescription('Você não pode usar esse comando aqui, apenas em <#789308075340464178>!')
