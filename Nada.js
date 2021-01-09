@@ -25,6 +25,13 @@ let embed3 = new Discord.MessageEmbed()
 message.author.send(embed3)
  message.author.dmChannel.createMessageCollector((x) => x.author.id == message.author.id, {max: 1}).on("collect", async (resposta2) => {
 resposta2 = resposta2.content
+
+let embed4 = new Discord.MessageEmbed()
+.setDescription('qual prefixo')
+
+message.author.send(embed3)
+ message.author.dmChannel.createMessageCollector((x) => x.author.id == message.author.id, {max: 1}).on("collect", async (resposta3) => {
+resposta3 = resposta3.content
   })
 })
 }
