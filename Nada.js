@@ -38,7 +38,7 @@ let embed4 = new Discord.MessageEmbed()
 
 message.author.send(embed5)
  message.author.dmChannel.createMessageCollector((x) => x.author.id == message.author.id, {max: 1}).on("collect", async (resposta4) => {
-resposta3 = resposta4.content
+resposta4 = resposta4.content
   })
 })
 }
