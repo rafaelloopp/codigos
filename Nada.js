@@ -40,9 +40,6 @@ message.author.send(embed5)
  message.author.dmChannel.createMessageCollector((x) => x.author.id == message.author.id, {max: 1}).on("collect", async (resposta4) => {
 resposta4 = resposta4.content
 .setDescription("Bot enviado para análise") 
-
-let embed6 = new Discord.MessageEmbed()
-.setDescription("num sei")
   })
 })
 }
