@@ -7,11 +7,24 @@ let erro = new Discord.MessageEmbed()
 
 if(message.channel.id != 789308075340464178) return message.channel.send(erro)
 
-message.delete()
-
 let embed = new Discord.MessageEmbed()
 .setDescription('Olhe sua dm!:3')
 
 message.channel.send(embed)
 
+let embed2 = new Discord.MessageEmbed()
+.setDescription('qual id')
+
+message.author.send(embed2)
+ message.author.dmChannel.createMessageCollector((x) => x.author.id == message.author.id, {max: 1}).on("collect", async (resposta) => {
+resposta = resposta.content
+
+let embed3 = new Discord.MessageEmbed()
+.setDescription('qual linguagem')
+
+message.author.send(embed3)
+ message.author.dmChannel.createMessageCollector((x) => x.author.id == message.author.id, {max: 1}).on("collect", async (resposta2) => {
+resposta2 = resposta2.content
+  })
+})
 }
