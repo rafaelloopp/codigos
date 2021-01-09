@@ -33,7 +33,7 @@ message.author.send(embed4)
  message.author.dmChannel.createMessageCollector((x) => x.author.id == message.author.id, {max: 1}).on("collect", async (resposta3) => {
 resposta3 = resposta3.content
 
-let embed4 = new Discord.MessageEmbed()
+let embed5 = new Discord.MessageEmbed()
 .setDescription('qual desc')
 
 message.author.send(embed5)
