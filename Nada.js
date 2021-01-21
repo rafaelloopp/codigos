@@ -87,9 +87,8 @@ client.channels.cache.get("798987474512773190").send(embed7).then
 let embed8 = new Discord.MessageEmbed()
 .setThumbnail('https://cdn.discordapp.com/icons/728027642728677386/37cd5f90aa2d69c518505b3907e0f863.png?size=1024')
 .setColor('0000FF')
-.setDescription(`${message.author.tag} enviou o bot ${await.client.users.fetch(resposta1).tag} para analise.`)
+.setDescription(`${message.author.tag} enviou o bot ${await client.users.fetch(resposta1).tag} para analise.`)
 client.channels.cache.get("798987169842200577").send(embed8).then
-        })
        })
       })
      })
