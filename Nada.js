@@ -24,21 +24,21 @@ resposta = resposta.content
 let embed3 = new Discord.MessageEmbed()
 .setDescription('qual linguagem')
 
-message.author.send(embed3).then
+message.author.send(embed3).then(() => {
  message.author.dmChannel.createMessageCollector((x) => x.author.id == message.author.id, {max: 1}).on("collect", async (resposta2) => {
 resposta2 = resposta2.content
 
 let embed4 = new Discord.MessageEmbed()
 .setDescription('qual prefixo')
 
-message.author.send(embed4).then
+message.author.send(embed4).then(() => {
  message.author.dmChannel.createMessageCollector((x) => x.author.id == message.author.id, {max: 1}).on("collect", async (resposta3) => {
 resposta3 = resposta3.content
 
 let embed5 = new Discord.MessageEmbed()
 .setDescription('qual desc')
 
-message.author.send(embed5).then
+message.author.send(embed5).then(() => {
  message.author.dmChannel.createMessageCollector((x) => x.author.id == message.author.id, {max: 1}).on("collect", async (resposta4) => {
 resposta4 = resposta4.content
 
@@ -51,4 +51,4 @@ client.channels.cache.get("789308076896813076").send(embed6).then
       })
     })
   })
-}
+}})
