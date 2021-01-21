@@ -55,8 +55,4 @@ client.channels.cache.get("789308076896813076").send(embed6).then
 })
   })
 })
-  })
-})
-  })
-})
 }
