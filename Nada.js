@@ -2,10 +2,10 @@ const Discord = require('discord.js')
 const db = require("firebase").database()
 exports.run = async(client, message, args) => {
 let erro = new Discord.MessageEmbed()
-.setDescription('Você não pode usar esse comando aqui, apenas em #➕・add-bot!')
+.setDescription('Você não pode usar esse comando aqui, apenas em <#798987474512773190>!')
 .setColor('#FF0101')
 
-if(message.channel.id != 789308075340464178) return message.channel.send(erro)
+if(message.channel.id != 798987474512773190) return message.channel.send(erro)
 
 message.delete()
 
