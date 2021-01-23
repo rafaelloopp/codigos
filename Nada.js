@@ -66,7 +66,7 @@ let embed7 = new Discord.MessageEmbed()
 .setThumbnail('https://cdn.discordapp.com/icons/728027642728677386/37cd5f90aa2d69c518505b3907e0f863.png?size=1024')
 .setTitle(`${message.author.tag} enviou um bot!`)
 .setColor('0000FF')
-.setDescription(`Nome do bot: \`\`\`js${await.client.users.fetch(resposta1).tag}\`\`\`\nLinguagem: \`\`\`js${resposta2}\`\`\`\nPrefix: \`\`\`js${resposta3}\`\`\`\nDescrição: \`\`\`${resposta4}\`\`\`\nQuem mandou: \`\`\`j${message.author.tag}\`\`\`
+.setDescription(`Nome do bot: \`\`\`js${await.client.users.fetch(resposta1).tag}\`\`\`Linguagem: \`\`\`js${resposta2}\`\`\`Prefix: \`\`\`js${resposta3}\`\`\`Descrição: \`\`\`${resposta4}\`\`\`Quem mandou: \`\`\`j${message.author.tag}\`\`\`
 Convide o bot:
 [Clique aqui](https://discord.com/oauth2/authorize?client_id=${resposta}&scope=bot&permissions=0)`)
 client.channels.cache.get("798987474512773190").send(embed7).then
